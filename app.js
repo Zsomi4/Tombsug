@@ -16,11 +16,11 @@ var eredmenyIn = document.getElementById("eredmeny");
 szamitgomb.addEventListener("click", function() {
     let oldalStr = oldalIn.value;
     let szogStr = szogIn.value;
-    let minta = /^[0-9]+$/;
+    let regex = /^[0-9]+$/;
 
-    if (oldalStr.match(minta)) {
+    if (oldalStr.match(regex)) {
         console.log("OK")
-    } else if (szogStr.match(minta)) {
+    } else if (szogStr.match(regex)) {
         console.log("OK")
     } else {
         console.log("Nem ok.")
